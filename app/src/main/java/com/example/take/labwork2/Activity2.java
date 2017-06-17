@@ -32,6 +32,11 @@ public class Activity2 extends AppCompatActivity {
         TextView hobbText = (TextView)findViewById(R.id.textView6);
         hobbText.setText(showHobb);
 
+        Intent sendGrade = getIntent();
+        String showGrade = sendGrade.getStringExtra("Grade");
+        TextView gradeText = (TextView)findViewById(R.id.textView7);
+        gradeText.setText(showGrade);
+
 
     }
 }
